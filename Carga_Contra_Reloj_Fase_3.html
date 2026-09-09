@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Carga CONTRA RELOJ · FASE 3 · Cargo Week</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#07192d;color:#fff;font-family:Arial,sans-serif}body{min-height:100vh}.wrap{max-width:1180px;margin:auto;padding:16px}.brandbar{display:flex;justify-content:space-between;align-items:center;gap:16px;color:#d9eaff;font-weight:900;letter-spacing:.14em;font-size:12px;margin-bottom:12px}.hero{background:linear-gradient(135deg,#0c3158,#0a2340 58%,#06162b);border:1px solid #3c79ad;border-radius:24px;padding:22px;box-shadow:0 20px 60px #0006}.logo{text-align:center;line-height:.82;margin:3px 0 10px}.logo .cargo{font-weight:1000;font-size:clamp(38px,7vw,72px);letter-spacing:-.05em;color:#f7fbff;text-shadow:0 3px 0 #9fb4c8,0 8px 18px #0008}.logo .week{font-weight:1000;font-size:clamp(42px,8vw,82px);letter-spacing:-.06em;color:#1279ff;text-shadow:0 3px 0 #064899,0 9px 18px #0009}.title{text-align:center;font-weight:1000;font-size:clamp(28px,5vw,52px);margin:8px 0 4px}.sub{text-align:center;color:#c6d7e7;font-size:15px}.intro-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:20px}.panel{background:#0a2039cc;border:1px solid #3d6a91;border-radius:20px;padding:18px}.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.rule{background:#071a30;border:1px solid #315575;border-radius:14px;padding:13px}.rule b{font-size:17px}.rule span{display:block;color:#b8cad9;font-size:13px;margin-top:5px}.demo{position:relative;min-height:300px;border-radius:18px;overflow:hidden;background:linear-gradient(#8db2d4 0 35%,#667c8f 35% 69%,#354454 69%);border:2px solid #5595cf}.demo:before{content:"";position:absolute;left:0;right:0;top:35%;height:34%;background:repeating-linear-gradient(90deg,#2e4152 0 10%,#263848 10% 20%);opacity:.45}.demo .rack{position:absolute;bottom:88px;width:110px;height:118px;border:10px solid #244766;border-top-width:7px}.demo .rack:before,.demo .rack:after{content:"";position:absolute;left:0;right:0;height:8px;background:#d49a32}.demo .rack:before{top:34px}.demo .rack:after{top:76px}.demo .rack.l{left:20px}.demo .rack.r{right:20px}.demo .belt{position:absolute;left:0;right:0;bottom:38px;height:34px;background:repeating-linear-gradient(90deg,#58646d 0 30px,#303940 30px 60px);border-top:5px solid #b2bdc7;border-bottom:5px solid #b2bdc7}.demo .truck{position:absolute;left:38%;bottom:58px;font-size:74px;filter:drop-shadow(0 8px 4px #0007);animation:demoMove 3.6s infinite ease-in-out}.demo .fall{position:absolute;top:-45px;font-size:36px;animation:fall 2.8s infinite linear}.demo .f1{left:24%}.demo .f2{left:57%;animation-delay:.8s}.demo .f3{left:78%;animation-delay:1.5s}.demo .f4{left:42%;animation-delay:2.1s}@keyframes demoMove{0%,15%{left:24%}50%{left:60%}85%,100%{left:38%}}@keyframes fall{0%{top:-50px}100%{top:245px}}.form{display:grid;grid-template-columns:1fr 1fr auto;gap:9px;margin-top:16px}input,select,button{font:inherit;border-radius:12px}input,select{padding:13px;border:1px solid #8ca0b3;background:#f3f7fa;color:#07162b}button{padding:13px;border:0;font-weight:900;cursor:pointer}.primary{background:#ffb323;color:#172033;box-shadow:inset 0 -3px 0 #c47a00}.primary:disabled{opacity:.55;cursor:not-allowed}#game,#end{display:none}.game-shell{background:#9bbad3;border-radius:24px;overflow:hidden;border:2px solid #74a8d4;box-shadow:0 20px 60px #0007}.hud{display:grid;grid-template-columns:1fr 1.1fr 1fr 1fr;gap:12px;padding:16px;background:linear-gradient(#7396b8,#7390aa);border-bottom:3px solid #d8e7f3}.hudbox{background:#27486f;border:2px solid #83b5df;border-radius:18px;padding:12px 16px;display:flex;align-items:center;gap:12px;min-width:0}.hudbox .ico{font-size:30px}.hudbox small{display:block;color:#e5f1fb;font-weight:700}.hudbox b{display:block;font-size:28px;line-height:1.05}.hudlogo{text-align:center;align-self:center;font-weight:1000;line-height:.8;filter:drop-shadow(0 3px 2px #0005)}.hudlogo span:first-child{display:block;color:#fff;font-size:34px}.hudlogo span:last-child{display:block;color:#ffae22;font-size:36px}.game-area{position:relative;background:#6f8799}.arena{position:relative;overflow:hidden;background:#819bad}.arena canvas{display:block;width:100%;height:auto;touch-action:none}.inst-panel{position:absolute;left:16px;top:16px;width:260px;z-index:5;background:#16375bcc;border:2px solid #5d8db9;border-radius:18px;padding:18px;backdrop-filter:blur(2px)}.inst-panel h3{margin:0 0 9px;font-size:22px}.inst-panel p{margin:0 0 14px;line-height:1.45;color:#eff7ff}.scoreline{display:grid;grid-template-columns:40px 1fr auto;align-items:center;gap:8px;padding:8px 0;border-top:1px solid #ffffff22}.scoreline:first-of-type{border-top:0}.scoreline .em{font-size:30px}.scoreline strong.good{color:#70ef72}.scoreline strong.bad{color:#ff6d6d}.controls{position:absolute;left:28px;bottom:28px;z-index:6;display:flex;gap:12px}.controls button{width:92px;height:92px;border-radius:50%;font-size:44px;color:#fff;background:linear-gradient(#0b70d9,#0851a8);border:5px solid #9bcbf5;box-shadow:0 8px 0 #073a77,0 12px 20px #0005;padding:0}.count{position:absolute;inset:0;display:none;place-items:center;background:#07192dcc;font-size:100px;font-weight:1000;z-index:9}.note{font-size:12px;color:#c3d6e7;text-align:center;margin-top:9px}.end{text-align:center;background:#0a2745;border:1px solid #3d6a91;border-radius:22px;padding:26px;margin-top:18px}.big{font-size:64px;font-weight:1000}#msg{min-height:20px;color:#ffb7b7;text-align:center;font-weight:800;margin-top:10px}.live-ranking{margin-top:18px;background:#0a2039cc;border:1px solid #3d6a91;border-radius:20px;padding:18px}.live-ranking h2{margin:0 0 5px;text-align:center}.rank-sub{text-align:center;color:#b8cad9;font-size:13px;margin-bottom:12px}.rank-table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px;background:#071a30}.rank-table th,.rank-table td{padding:10px 8px;text-align:left;border-bottom:1px solid #ffffff18;font-size:13px}.rank-table th{color:#8fc7ff;font-size:11px;text-transform:uppercase;letter-spacing:.08em}.rank-table td:first-child,.rank-table th:first-child{text-align:center;width:48px}.rank-table td:last-child,.rank-table th:last-child{text-align:right}.rank-empty{text-align:center!important;color:#b8cad9;padding:18px!important}.rank-me{background:#0d3a66}.rank-medal{font-size:18px}.rank-status{text-align:center;color:#8fc7ff;font-size:12px;margin-top:9px;min-height:16px}@media(max-width:820px){.intro-grid{grid-template-columns:1fr}.hud{grid-template-columns:1fr 1fr}.hudlogo{grid-column:1/-1;grid-row:1}.inst-panel{position:relative;left:auto;top:auto;width:auto;margin:12px}.controls{position:relative;left:auto;bottom:auto;justify-content:center;padding:0 12px 18px}.game-area{padding-bottom:4px}.form{grid-template-columns:1fr}.rules{grid-template-columns:1fr 1fr}}@media(max-width:520px){.rules{grid-template-columns:1fr}.hud{grid-template-columns:1fr 1fr;gap:7px;padding:9px}.hudbox{padding:8px}.hudbox b{font-size:21px}.hudlogo span:first-child{font-size:28px}.hudlogo span:last-child{font-size:30px}.controls button{width:76px;height:76px;font-size:36px}.hero{padding:14px}.inst-panel{padding:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="brandbar"><div>CARGO WEEK · FASE 3</div><div>RETO DE HABILIDAD · NIVEL DIFÍCIL</div></div>
+<section class="hero" id="intro">
+<div class="logo"><div class="cargo">CARGO</div><div class="week">WEEK</div></div>
+<div class="title">FASE 3 · CARGA CONTRA RELOJ 🚚⚡</div>
+<div class="sub">La velocidad aumenta poco a poco durante el reto. ¡Atrapa la carga y cuidado con los obstáculos!<br><b>🔥 FASE 3 · ⏱️ 1 MINUTO · 🔒 1 SOLA OPORTUNIDAD</b></div>
+<div class="intro-grid">
+<div class="panel">
+<h2 style="margin-top:0">¿Cómo se juega?</h2>
+<div class="rules">
+<div class="rule"><b>📦 +10 puntos</b><span>Caja normal.</span></div>
+<div class="rule"><b>⭐ +25 puntos</b><span>Carga especial.</span></div>
+<div class="rule"><b>🔵 +40 puntos</b><span>Carga urgente.</span></div>
+<div class="rule"><b>💥 −25 puntos</b><span>Carga dañada.</span></div>
+<div class="rule"><b>⚠️ −35 puntos</b><span>Carga peligrosa.</span></div>
+
+</div>
+<div class="form">
+<input id="name" placeholder="Nombre completo" maxlength="70">
+<select id="branch"><option value="">Selecciona tu sucursal</option><option>Estado de México</option><option>Buenos Aires</option><option>Victoria</option><option>Nuevo Repueblo</option><option>Leamington</option><option>Tampico</option><option>Ontario</option><option>Detroit</option><option>San Antonio</option><option>Laredo</option></select>
+<button class="primary" id="startBtn">COMENZAR</button>
+</div><div id="msg"></div>
+</div>
+<div class="demo"><div class="rack l"></div><div class="rack r"></div><div class="fall f1">📦</div><div class="fall f2">⭐</div><div class="fall f3">⚠️</div><div class="fall f4">🔵</div><div class="belt"></div><div class="truck">🚚</div></div>
+</div>
+</section>
+
+<section class="live-ranking" id="liveRanking">
+<h2>🏆 RANKING EN VIVO</h2>
+<div class="rank-sub">Se actualiza automáticamente · Mayor puntaje primero</div>
+<div style="overflow-x:auto"><table class="rank-table"><thead><tr><th>#</th><th>Nombre</th><th>Sucursal</th><th>Puntos</th></tr></thead><tbody id="rankBody"><tr><td colspan="4" class="rank-empty">Cargando ranking...</td></tr></tbody></table></div>
+<div class="rank-status" id="rankStatus"></div>
+</section>
+
+<section id="game">
+<div class="game-shell">
+<div class="hud">
+<div class="hudbox"><div class="ico">⏱️</div><div><small>Tiempo</small><b id="timer">01:00</b></div></div>
+<div class="hudlogo"><span>CARGO</span><span>WEEK</span></div>
+<div class="hudbox"><div class="ico">🏆</div><div><small>Puntos</small><b id="score">0</b></div></div>
+<div class="hudbox"><div class="ico">⚡</div><div><small>Velocidad</small><b id="speed">1.0×</b></div></div>
+</div>
+<div class="game-area">
+<div class="arena"><canvas id="cv" width="900" height="600"></canvas><div class="count" id="count">3</div></div>
+<div class="inst-panel">
+<h3>🔥 FASE 3 · Instrucciones</h3>
+<p>Desliza el camión de izquierda a derecha. Los objetos comienzan un poco más rápido y aceleran progresivamente. Conforme avanza el minuto aparecen más cargas y obstáculos, pero sigue siendo posible reaccionar.</p>
+<div class="scoreline"><span class="em">📦</span><span>Caja normal</span><strong class="good">+10</strong></div>
+<div class="scoreline"><span class="em">⭐</span><span>Carga especial</span><strong class="good">+25</strong></div>
+<div class="scoreline"><span class="em">🔵</span><span>Carga urgente</span><strong class="good">+40</strong></div>
+<div class="scoreline"><span class="em">💥</span><span>Carga dañada</span><strong class="bad">−25</strong></div>
+<div class="scoreline"><span class="em">⚠️</span><span>Peligro</span><strong class="bad">−35</strong></div>
+</div>
+
+</div>
+</div>
+<div class="note">Desliza el camión hacia la izquierda o derecha para moverte. En computadora también puedes arrastrarlo con el mouse o usar las flechas del teclado.</div>
+</section>
+
+<section class="end" id="end"><div>FASE 3 COMPLETADA</div><h2>¡FIN DEL RETO! 🏁</h2><div class="big" id="final">0 PTS</div><p>Tu resultado ha sido registrado.</p></section>
+</div>
+<script>
+const SHEET_URL="https://script.google.com/macros/s/AKfycbxHb5ywrEkM6YWse-bjaslWuJV5P90e-E2jsxaWCCIpRKDr1idRIH-ild63H1H97-OU/exec";
+const GAME_SECONDS=60,$=s=>document.querySelector(s),cv=$("#cv"),c=cv.getContext("2d");
+const xs=[360,460,560,660,760];let slot=2,player={x:560,y:525,w:150,h:70},objs=[],score=0,left=GAME_SECONDS,running=false,last=0,spawn=0,raf;
+const ATTEMPT_KEY="cargaCONTRA_RELOJ::FASE_3::INTENTO_USADO";
+function pkey(){return ATTEMPT_KEY}
+function reset(){slot=2;player.x=560;objs=[];score=0;left=GAME_SECONDS;spawn=.72;update()}
+function update(){$("#score").textContent=score;let s=Math.max(0,Math.ceil(left));$("#timer").textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function addObj(){
+ let r=Math.random(),
+ type=r<.24?"box":r<.36?"star":r<.45?"urgent":r<.73?"broken":"danger";
+ let map={box:["📦",10,28],star:["⭐",25,26],urgent:["🔵",40,25],broken:["💥",-25,27],danger:["⚠️",-35,28]};
+ let m=map[type],x=300+Math.random()*540;
+ objs.push({type,x,y:-35,emoji:m[0],pts:m[1],r:m[2],vy:205+Math.random()*85})
+}
+function collide(o){return Math.abs(player.x-o.x)<(player.w/2+o.r*.45)&&o.y>player.y-50&&o.y<player.y+15}
+function roundRect(ctx,x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill)ctx.fill();if(stroke)ctx.stroke()}
+function drawWarehouse(){
+ let g=c.createLinearGradient(0,0,0,600);g.addColorStop(0,"#8bb0ce");g.addColorStop(.57,"#758fa4");g.addColorStop(.58,"#536778");g.addColorStop(1,"#3c4c59");c.fillStyle=g;c.fillRect(0,0,900,600);
+ // back wall panels
+ c.fillStyle="#6f879a";for(let x=0;x<900;x+=150)c.fillRect(x,0,145,330);
+ // central shutter
+ c.fillStyle="#526c82";c.fillRect(360,115,210,250);c.strokeStyle="#8198aa";c.lineWidth=4;for(let y=125;y<360;y+=22){c.beginPath();c.moveTo(365,y);c.lineTo(565,y);c.stroke()}
+ // racks
+ for(const rx of [55,690]){c.fillStyle="#23425d";c.fillRect(rx,105,18,285);c.fillRect(rx+130,105,18,285);for(let y of [150,230,310]){c.fillStyle="#d19a36";c.fillRect(rx,y,148,10);c.fillStyle="#9c6d2b";for(let k=0;k<3;k++)c.fillRect(rx+15+k*42,y-36,34,30)}}
+ // hazard pillars
+ c.fillStyle="#d8a52f";c.fillRect(238,150,24,235);c.fillRect(635,150,24,235);
+ c.fillStyle="#22374a";for(let y=170;y<375;y+=38){c.save();c.translate(238,y);c.rotate(-.6);c.fillRect(0,0,24,8);c.restore();c.save();c.translate(635,y);c.rotate(-.6);c.fillRect(0,0,24,8);c.restore()}
+ // floor & road
+ c.fillStyle="#4d5e6d";c.fillRect(0,390,900,210);c.fillStyle="#343f49";c.fillRect(0,475,900,125);
+ c.strokeStyle="#dbe8f0";c.lineWidth=6;c.setLineDash([35,26]);c.beginPath();c.moveTo(0,580);c.lineTo(900,580);c.stroke();c.setLineDash([]);
+}
+function draw(){c.clearRect(0,0,900,600);drawWarehouse();objs.forEach(o=>{c.font="46px Arial";c.textAlign="center";c.textBaseline="middle";c.fillText(o.emoji,o.x,o.y)});drawTruck(player.x,player.y)}
+function drawTruck(x,y){c.save();c.translate(x,y);c.fillStyle="#0005";c.beginPath();c.ellipse(0,32,78,12,0,0,Math.PI*2);c.fill();c.fillStyle="#f4a825";c.strokeStyle="#9f6213";c.lineWidth=4;roundRect(c,-72,-35,95,52,8,true,true);c.fillStyle="#ffd06f";c.fillRect(-60,-20,36,5);c.fillRect(-60,-9,49,5);c.fillStyle="#edf3f7";c.strokeStyle="#526677";roundRect(c,20,-29,48,46,9,true,true);c.fillStyle="#2b79b9";c.strokeStyle="#173d5d";c.lineWidth=3;roundRect(c,29,-22,24,19,4,true,true);c.fillStyle="#b6c2cc";c.fillRect(59,8,14,7);c.fillStyle="#151d24";for(const wx of [-43,45]){c.beginPath();c.arc(wx,22,13,0,Math.PI*2);c.fill();c.fillStyle="#cbd4dc";c.beginPath();c.arc(wx,22,6,0,Math.PI*2);c.fill();c.fillStyle="#151d24"}c.fillStyle="#fff0a7";c.beginPath();c.arc(67,2,4,0,Math.PI*2);c.fill();c.restore()}
+function loop(t){
+ if(!running)return;
+ if(!last)last=t;
+ let dt=Math.min(.04,(t-last)/1000);last=t;left-=dt;
+ let elapsed=GAME_SECONDS-left;
+ // Fase 3 ajustada: inicia un poco más rápida y acelera gradualmente.
+ let mult=1.0+elapsed/60*1.15;
+ spawn-=dt;
+ if(spawn<=0){
+   addObj();
+   if(elapsed>22&&Math.random()<.18)addObj();
+    if(elapsed>45&&Math.random()<.08)addObj();
+   
+   
+   spawn=Math.max(.38,.78-elapsed*.0065);
+ }
+ for(let i=objs.length-1;i>=0;i--){
+   let o=objs[i];o.y+=o.vy*mult*dt;
+   if(collide(o)){score=Math.max(0,score+o.pts);objs.splice(i,1);continue}
+   if(o.y>640)objs.splice(i,1)
+ }
+ update();
+ $("#speed").textContent=mult.toFixed(1)+"×";
+ draw();
+ if(left<=0){finish();return}
+ raf=requestAnimationFrame(loop)
+}
+function clampTruckX(x){return Math.max(320,Math.min(790,x))}
+function movePixels(dx){player.x=clampTruckX(player.x+dx)}
+document.addEventListener("keydown",e=>{if(!running)return;if(e.key==="ArrowLeft"){e.preventDefault();movePixels(-45)}if(e.key==="ArrowRight"){e.preventDefault();movePixels(45)}});
+let dragging=false,lastPointerX=0;
+cv.addEventListener("pointerdown",e=>{if(!running)return;dragging=true;lastPointerX=e.clientX;cv.setPointerCapture?.(e.pointerId)});
+cv.addEventListener("pointermove",e=>{if(!running||!dragging)return;let rect=cv.getBoundingClientRect();let scale=900/rect.width;let dx=(e.clientX-lastPointerX)*scale;lastPointerX=e.clientX;movePixels(dx)});
+function stopDrag(e){dragging=false;try{cv.releasePointerCapture?.(e.pointerId)}catch(_){}}
+cv.addEventListener("pointerup",stopDrag);cv.addEventListener("pointercancel",stopDrag);
+async function countdown(){let el=$("#count");el.style.display="grid";for(let x of ["3","2","1","¡YA!"]){el.textContent=x;await new Promise(r=>setTimeout(r,x==="¡YA!"?500:700))}el.style.display="none"}
+async function validarEnServidor(nombre,sucursal){const respuesta=await fetch(SHEET_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({accion:"validar",nombre,sucursal})});if(!respuesta.ok)throw new Error("No se pudo validar el intento.");return await respuesta.json()}
+$("#startBtn").onclick=async()=>{let n=$("#name").value.trim(),b=$("#branch").value;$("#msg").textContent="";if(n.split(/\s+/).length<2||!b){$("#msg").textContent="Escribe tu nombre completo y selecciona tu sucursal.";return}if(localStorage.getItem(pkey())==="1"){$("#msg").textContent="🔒 Esta oportunidad ya fue utilizada en este navegador. No puedes volver a jugar.";return}$("#startBtn").disabled=true;$("#startBtn").textContent="VALIDANDO...";try{const validacion=await validarEnServidor(n,b);if(validacion.yaJugo){localStorage.setItem(pkey(),"1");$("#msg").textContent="🔒 Ya existe una participación con este nombre y sucursal. Solo se permite una oportunidad.";$("#startBtn").textContent="INTENTO UTILIZADO";return}localStorage.setItem(pkey(),"1");$("#intro").style.display="none";$("#game").style.display="block";reset();draw();await countdown();running=true;last=0;raf=requestAnimationFrame(loop)}catch(err){$("#msg").textContent="⚠️ No se pudo validar tu participación. Revisa tu conexión e inténtalo de nuevo.";$("#startBtn").disabled=false;$("#startBtn").textContent="COMENZAR"}};
+function finish(){running=false;cancelAnimationFrame(raf);$("#game").style.display="none";$("#end").style.display="block";$("#final").textContent=score+" PTS";let payload={accion:"guardar",nombre:$("#name").value.trim(),sucursal:$("#branch").value,puntos:score,juego:"Carga CONTRA RELOJ",fase:"FASE 3",fecha:new Date().toISOString()};fetch(SHEET_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)}).then(()=>setTimeout(cargarRanking,700)).catch(()=>{})}
+async function cargarRanking(){
+ try{
+  const r=await fetch(SHEET_URL+(SHEET_URL.includes("?")?"&":"?")+"accion=ranking&t="+Date.now(),{cache:"no-store"});
+  if(!r.ok)throw new Error("ranking");
+  const data=await r.json();
+  let rows=Array.isArray(data)?data:(data.ranking||data.resultados||data.data||[]);
+  rows=rows.map(x=>({nombre:x.nombre||x.Nombre||x.name||"—",sucursal:x.sucursal||x.Sucursal||x.branch||"—",puntos:Number(x.puntos??x.Puntos??x.score??0)})).filter(x=>Number.isFinite(x.puntos)).sort((a,b)=>b.puntos-a.puntos).slice(0,10);
+  const body=$("#rankBody");
+  if(!rows.length){body.innerHTML='<tr><td colspan="4" class="rank-empty">Aún no hay resultados.</td></tr>';return}
+  const yo=$("#name").value.trim().toLowerCase();
+  body.innerHTML=rows.map((x,i)=>`<tr class="${yo&&x.nombre.toLowerCase()===yo?'rank-me':''}"><td class="rank-medal">${i===0?'🥇':i===1?'🥈':i===2?'🥉':i+1}</td><td>${esc(x.nombre)}</td><td>${esc(x.sucursal)}</td><td><b>${x.puntos}</b></td></tr>`).join("");
+  $("#rankStatus").textContent="Actualizado: "+new Date().toLocaleTimeString("es-MX",{hour:"2-digit",minute:"2-digit",second:"2-digit"});
+ }catch(e){$("#rankStatus").textContent="El ranking necesita que Apps Script responda a accion=ranking."}
+}
+function esc(v){return String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+setInterval(cargarRanking,5000);cargarRanking();
+function aplicarBloqueoSiYaJugo(){if(localStorage.getItem(ATTEMPT_KEY)==="1"){$("#name").disabled=true;$("#branch").disabled=true;$("#startBtn").disabled=true;$("#startBtn").textContent="INTENTO UTILIZADO";$("#msg").textContent="🔒 Ya se utilizó la única oportunidad de juego en este navegador."}}
+aplicarBloqueoSiYaJugo();reset();draw();
+</script>
+</body></html>
